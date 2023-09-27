@@ -5,6 +5,7 @@ After installing SQL Server, you need to configure your Laravel application to u
 1. **Open SQL Server Configuration Manager**:
    - Open the Start menu and search for "SQL Server Configuration Manager."
    - Launch SQL Server Configuration Manager from the search results.
+   - If you not found on windows please follow this [link](https://learn.microsoft.com/en-us/answers/questions/166724/sql-server-configuration-manager-not-showing-in-wi)
 
 2. **Select "Protocols for MSSQLSERVER" (or Your SQL Server Instance Name)**:
    - In SQL Server Configuration Manager, navigate to "SQL Server Network Configuration" in the left pane.
