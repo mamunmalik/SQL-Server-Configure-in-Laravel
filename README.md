@@ -53,33 +53,35 @@ After installing SQL Server, you need to configure your Laravel application to u
 
      - Save the `php.ini` file.
 
-8. **Enable SQL Server Extension in PHP (on WampServer)**:
+     **If you using on WampServer**:
 
-   1. **Copy Extension Files**:
-   - Download the necessary PHP extension files for SQL Server (`php_pdo_sqlsrv_7x_ts.dll` and `php_sqlsrv_7x_ts.dll`) from a trusted source or the official Microsoft website.
-   - Paste these extension files into the `ext` directory of your PHP installation, typically located at `C:\wamp64\bin\php\php7.x\ext`.
+        1. **Copy Extension Files**:
+        - Download the necessary PHP extension files for SQL Server (`php_pdo_sqlsrv_7x_ts.dll` and `php_sqlsrv_7x_ts.dll`) from a trusted source or the official Microsoft website.
+        - Paste these extension files into the `ext` directory of your PHP installation, typically located at `C:\wamp64\bin\php\php7.x\ext`.
 
-    2. **Edit PHP Configuration (`php.ini`) for PHP CLI**:
-    - Open the `php.ini` file in the PHP directory, usually found at `C:\wamp64\bin\php\php7.x\php.ini`.
-    - Add the following lines to enable the SQL Server extensions for PHP CLI:
+        2. **Edit PHP Configuration (`php.ini`) for PHP CLI**:
+        - Open the `php.ini` file in the PHP directory, usually found at `C:\wamp64\bin\php\php7.x\php.ini`.
+        - Add the following lines to enable the SQL Server extensions for PHP CLI:
 
-        ```ini
-        extension=php_pdo_sqlsrv_7x_ts.dll
-        extension=php_sqlsrv_7x_ts.dll
+            ```ini
+            extension=php_pdo_sqlsrv_7x_ts.dll
+            extension=php_sqlsrv_7x_ts.dll
         ```
 
-    3. **Edit PHP Configuration (`php.ini`) for Apache**:
-    - Open the `php.ini` file used by Apache. This file is typically located in the Apache directory, usually at `C:\wamp64\bin\apache\apache2.4.xx\bin\php.ini`.
-    - Add the same lines as in step 2 to enable the SQL Server extensions for PHP within the Apache environment:
+        3. **Edit PHP Configuration (`php.ini`) for Apache**:
+        - Open the `php.ini` file used by Apache. This file is typically located in the Apache directory, usually at `C:\wamp64\bin\apache\apache2.4.xx\bin\php.ini`.
+        - Add the same lines as in step 2 to enable the SQL Server extensions for PHP within the Apache environment:
 
-        ```ini
-        extension=php_pdo_sqlsrv_7x_ts.dll
-        extension=php_sqlsrv_7x_ts.dll
-        ```
+            ```ini
+            extension=php_pdo_sqlsrv_7x_ts.dll
+            extension=php_sqlsrv_7x_ts.dll
+            ```
 
-    4. **Restart WAMPP Server**:
-    - Save the changes to the `php.ini` files.
-    - Restart the WAMPP server to apply the configuration changes.
+        4. **Restart WAMPP Server**:
+        - Save the changes to the `php.ini` files.
+        - Restart the WAMPP server to apply the configuration changes.
+
+8. 
 
 8. **Download the ODBC Driver for SQL Server**:
    - Visit the Microsoft Download Center's [ODBC Driver for SQL Server](https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server) page.
