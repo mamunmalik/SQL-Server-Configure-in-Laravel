@@ -95,14 +95,4 @@ After installing SQL Server, you need to configure your Laravel application to u
      ```bash
      php artisan migrate
      ```
-11. **Start the Laravel Development Server**:
-
-   - Launch the Laravel development server with the following command:
-
-     ```bash
-     php artisan serve
-     ```
-
-     - Your Laravel application should now be accessible at `http://localhost:8000`.
-
 You have successfully configured Laravel to use SQL Server as the database backend for your application. You can now start developing your Laravel project with SQL Server.
